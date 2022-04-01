@@ -1,0 +1,96 @@
+body {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+nav {
+  position: absolute;
+  width: 780px;
+  background-color: burlywood;
+  padding: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  color: blueviolet;
+}
+h2 {
+  font-style: italic;
+}
+
+h3 {
+  color: darkblue;
+}
+
+p {
+  color: brown;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.pageAbout {
+  text-align: center;
+}
+
+.name {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#intro {
+  color: darkgreen;
+  font-size: 1.25em;
+}
+
+#interest {
+  display: inline-block;
+  margin-left: 2em;
+  height: 200px;
+}
+
+#dogLog {
+  height: 200px;
+  float: left;
+}
+
+input[type="button"] {
+  background: gray;
+  border-radius: 0.5em;
+}
+
+input[type="button"]:hover {
+  background: lightcyan;
+}
+
+#dogField {
+  height: 200px;
+  width: 200px;
+  padding-top: 10px;
+  object-fit: cover;
+}
+
+table {
+  position: static;
+  width: 450px;
+  border: solid;
+  border-collapse: collapse;
+}
+
+table td,
+th {
+  border: 2px solid;
+}
+
+iframe {
+  padding-top: 10px;
+  display: inline;
+}
