@@ -91,6 +91,9 @@ table {
   border: solid;
   border-collapse: collapse;
 }
+td {
+  padding-left: 10px;
+}
 
 table td,
 th {
