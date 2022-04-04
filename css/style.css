@@ -4,10 +4,15 @@ body {
   margin-top: 0;
 }
 
-.wrapper {
+.mainWrapper {
   width: 800px;
   margin: 0 auto;
   background-color: rgba(240, 248, 255, 0.75);
+  padding: 0;
+}
+
+.contentWrapper {
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -17,6 +22,7 @@ nav {
   background-color: burlywood;
   padding: 10px;
   font-weight: bold;
+  /* margin-left: -10px; */
 }
 
 h1 {
@@ -100,7 +106,7 @@ iframe {
   body {
     margin: 0;
   }
-  .wrapper {
+  .mainWrapper {
     width: 100%;
   }
 
@@ -109,6 +115,6 @@ iframe {
   }
 
   iframe {
-    width: 97%;
+    width: 100%;
   }
 }
