@@ -94,7 +94,6 @@ th {
 iframe {
   padding-top: 10px;
   display: inline;
-  width: 100%;
 }
 
 @media (max-width: 799px) {
