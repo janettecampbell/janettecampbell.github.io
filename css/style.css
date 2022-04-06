@@ -63,9 +63,10 @@ p {
   height: 200px;
 }
 
-#dogLog {
+#selfImage {
   height: 200px;
   float: left;
+  border-radius: 50%;
 }
 
 input[type="button"] {
