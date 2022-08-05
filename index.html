@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="./js/script.js" defer></script>
     <title>Janette Campbell</title>
   </head>
   <body>
-    <div class="mainWrapper">
-      <nav>
-        <a href="#">Home</a>
-        <a href="pages/more-about-me.html">More About Me</a>
-      </nav>
-      <div class="contentWrapper">
-        <h2 class="name">Janette Campbell</h2>
-        <h3 class="pageAbout">Welcome!</h3>
-        <p id="intro">
-          I'm excited to be part of this course. I am from the
-          <a href="https://www.atlantaga.gov/">Atlanta</a> campus.
-        </p>
-        <p id="why">
-          I am pursuing my interest in coding because I enjoy the process.
-        </p>
-        <a href="https://www.linkedin.com/in/janettecampbell/">
-          <img id="selfImage" src="images/golden-on-log.jpg" />
-        </a>
-        <div id="interest">
-          <p>I am interested in:</p>
-          <ul>
-            <li>Coding</li>
-            <li>Sewing</li>
-            <li>Ceramics</li>
-          </ul>
-          <form>
-            <h3>What are you most excited about?</h3>
-            <input type="text" name="favoritefood" /> <br />
-            <br />
-            <input type="button" name="submit" value="submit" />
-          </form>
+    <div class="main-wrapper">
+      <header>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+
+      <section class="section1">
+        <div class="title">
+          <h1>Hello, my name is</h1>
+          <h1>Janette Campbell</h1>
+          <h1>and I'm a developer.</h1>
         </div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Bkf1pAhs_KY"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+        <div class="title-bg">
+          <img src="./images/background.jpg" alt="abstract background image" />
+        </div>
+      </section>
+      <section class="section2">
+        <div id="about">
+          <div class="memoji">
+            <img src="./images/Memoji1.png" alt="memoji of Janette" />
+          </div>
+          <div class="about-text">
+            <h1>About</h1>
+            <h2>
+              Nothing much to see here. Just me ackwardly trying to describe
+              myself.
+            </h2>
+            <p>
+              I'm a full-stack developer who likes to cook in her free time.
+            </p>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/janettecampbell/"
+            ><img src="./images/linkedin-icon.png" alt="LinkedIn Icon"
+          /></a>
+          <a href="https://github.com/janettecampbell"
+            ><img src="./images/github-icon.png" alt="GitHub Icon"
+          /></a>
+        </div>
+      </section>
     </div>
   </body>
 </html>
