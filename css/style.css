@@ -34,18 +34,6 @@ nav a {
   margin-right: 33px;
 }
 
-.section {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2000ms all ease;
-}
-
-.section.active {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .section-title {
   top: 0;
   height: 76vh;
@@ -80,7 +68,6 @@ nav a {
   color: #03141b;
   background-color: #fff;
   width: 100%;
-  height: 92vh;
 }
 
 .memoji {
@@ -113,8 +100,182 @@ nav a {
   font-size: 2vw;
 }
 
+.about-text p {
+  font-size: 1.5vw;
+  margin: 2vh 0 4vh 0;
+}
+
+.section-portfolio {
+  margin: 1vh 4vw;
+}
+
+.section-portfolio h1 {
+  font-size: 4vw;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nyc space dashboard"
+    "nyc-name space-name dashboard-name"
+    "jeopardy blog war"
+    "jeopardy-name blog-name war-name";
+}
+
+.projects img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.space {
+  grid-area: space;
+}
+
+.space-name {
+  grid-area: space-name;
+}
+
+.jeopardy {
+  grid-area: jeopardy;
+}
+
+.jeopardy-name {
+  grid-area: jeopardy-name;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.blog-name {
+  grid-area: blog-name;
+}
+
+.war {
+  grid-area: war;
+}
+
+.war-name {
+  grid-area: war-name;
+}
+
+.nyc {
+  grid-area: nyc;
+}
+
+.nyc-name {
+  grid-area: nyc-name;
+}
+
+.dashboard {
+  grid-area: dashboard;
+}
+
+.dashboard-name {
+  grid-area: dashboard-name;
+}
+
+.name {
+  margin: 0 auto;
+}
+
+.section-contact {
+  display: inline-block;
+  top: 0;
+  margin: 0 auto;
+  color: #03141b;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-text {
+  margin: 3vh 4vw;
+}
+
+.contact-text h1 {
+  font-size: 4vw;
+  line-height: 0em;
+  overflow-wrap: normal;
+  margin-bottom: 8vh;
+}
+
 .social {
-  float: right;
-  margin: 5vh 2vw 0 0;
+  float: left;
+  margin: 0 4vw;
   width: 66vw;
+}
+
+@media screen and (min-width: 481px) and (max-width: 848px) {
+  .title {
+    margin: 41hv auto 0 auto;
+  }
+
+  .memoji {
+    float: none;
+    text-align: center;
+  }
+
+  .about-text {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .about-text h1 {
+    font-size: 5vw;
+  }
+
+  .about-text h2 {
+    font-size: 3vw;
+  }
+
+  .about-text p {
+    font-size: 2.25vw;
+  }
+
+  .contact-text h1 {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .title {
+    margin: 41hv auto 0 auto;
+  }
+
+  .memoji {
+    float: none;
+    text-align: center;
+  }
+
+  .about-text {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .about-text h1 {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 5vw;
+  }
+
+  .about-text p {
+    font-size: 3.5vw;
+  }
+
+  .contact-text h1 {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .social {
+    text-align: center;
+  }
 }
