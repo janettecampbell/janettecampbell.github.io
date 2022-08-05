@@ -106,7 +106,7 @@ nav a {
 }
 
 .section-portfolio {
-  margin: 1vh 4vw;
+  margin: 8vh 4vw;
 }
 
 .section-portfolio h1 {
@@ -184,6 +184,7 @@ nav a {
 }
 
 .section-contact {
+  margin-top: 11vh;
   display: inline-block;
   top: 0;
   margin: 0 auto;
@@ -237,6 +238,10 @@ nav a {
     font-size: 2.25vw;
   }
 
+  .section-portfolio h1 {
+    font-size: 5vw;
+  }
+
   .contact-text h1 {
     font-size: 5vw;
   }
@@ -268,6 +273,11 @@ nav a {
 
   .about-text p {
     font-size: 3.5vw;
+  }
+
+  .section-portfolio h1 {
+    text-align: center;
+    font-size: 10vw;
   }
 
   .contact-text h1 {
