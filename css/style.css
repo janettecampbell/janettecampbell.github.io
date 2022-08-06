@@ -73,7 +73,7 @@ nav a {
 .memoji {
   float: left;
   background-color: #fff;
-  margin: 8vh 0 0 2vw;
+  margin: 11vh 0 0 2vw;
 }
 
 .memoji img {
@@ -86,7 +86,7 @@ nav a {
 
 .about-text {
   float: right;
-  margin: 5vh 2vw 0 0;
+  margin: 11vh 2vw 5vh 0;
   width: 66vw;
 }
 
@@ -195,7 +195,7 @@ nav a {
 }
 
 .contact-text {
-  margin: 3vh 4vw;
+  margin: 11vh 4vw;
 }
 
 .contact-text h1 {
