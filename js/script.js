@@ -2,12 +2,18 @@
 const animate = document.querySelectorAll(".animate");
 const animateLeft = document.querySelectorAll(".animate-left");
 const animateRight = document.querySelectorAll(".animate-right");
+const navBtnImg = document.querySelector(".nav-btn-img");
+const navBtnContent = document.querySelector(".nav-btn-content");
+const visible = document.querySelector(".visible");
+const hidden = document.querySelector(".hidden");
+
+// ======================================================
+// =============== Fade transitions =====================
+//=======================================================
 
 // ============= If section is visible in window =================
 const isVisible = (e) => {
   const elementDiv = e.getBoundingClientRect();
-  console.log(window.innerHeight);
-  console.log(elementDiv.top);
   let distanceFromTop = -300;
   return elementDiv.top - window.innerHeight < distanceFromTop ? true : false;
 };
@@ -50,3 +56,21 @@ const scanElementsFadeRight = (e) => {
 };
 
 window.addEventListener("scroll", scanElementsFadeRight);
+
+// =====================================================
+// ============== Show menu on click ===================
+// =====================================================
+
+// ================ Switch from visible to not visible===================
+const handleClick = (e) => {
+  e.preventDefault();
+  if (navBtnContent.classList.contains("hidden")) {
+    navBtnContent.classList.remove("hidden");
+    navBtnContent.classList.add("visible");
+  } else {
+    navBtnContent.classList.remove("visible");
+    navBtnContent.classList.add("hidden");
+  }
+};
+
+navBtnImg.addEventListener("click", handleClick);

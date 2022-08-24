@@ -12,27 +12,51 @@
   <body>
     <div class="main-wrapper">
       <header>
-        <nav>
-          <a href="./index.html">Home</a>
+        <nav class="navbar">
+          <a href="#top">Home</a>
           <a href="#about-tag">About</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#certification">Certification</a>
+          <a href="#resume">Resume</a>
           <a href="#contact">Contact</a>
         </nav>
+        <!-- end of navbar -->
+        <nav class="nav-btn">
+          <div class="nav-btn-img">
+            <img src="./images/menu-icon.png" alt="menu icon" />
+          </div>
+          <!-- end of nav-btn-img -->
+          <div class="nav-btn-content hidden">
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#about-tag">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#certification">Certification</a></li>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- end of nav-btn-content -->
+        </nav>
       </header>
-
-      <section class="section-title">
-        <div class="title">
-          <h1>Hello, my name is</h1>
-          <h1>Janette Campbell</h1>
-          <h1>and I'm a software engineer.</h1>
-        </div>
-        <!-- end of title -->
-        <div class="title-bg">
-          <img src="./images/background.jpg" alt="abstract background image" />
-        </div>
-        <!-- end of title-bg -->
-      </section>
-      <!-- end of section-title -->
+      <a id="title-tag">
+        <section class="section-title">
+          <div class="title">
+            <h1>
+              Hello, my name is Janette Campbell and I'm a software engineer.
+            </h1>
+          </div>
+          <!-- end of title -->
+          <div class="title-bg">
+            <img
+              src="./images/background.jpg"
+              alt="abstract background image"
+            />
+          </div>
+          <!-- end of title-bg -->
+        </section>
+        <!-- end of section-title -->
+      </a>
       <a id="about-tag">
         <section class="section-about">
           <div id="about">
@@ -79,7 +103,7 @@
                 well.
               </p>
               <p>
-                Since attending bootcamp, where I learned the MERN stack, I have
+                Since attending BootCamp, where I learned the MERN stack, I have
                 learned to use other platforms. I have gained experience in Java
                 and Angular.
               </p>
@@ -107,7 +131,16 @@
               /></a>
             </div>
             <!-- end of space-->
-            <div class="space-name name"><h2>Space Game</h2></div>
+            <div class="space-name name">
+              <h2>
+                <a
+                  href="https://janettecampbell.github.io/Space-Game/"
+                  target="_blank"
+                >
+                  Space Game</a
+                >
+              </h2>
+            </div>
             <!-- end of space-name -->
             <div class="jeopardy">
               <a href="https://jan-jeopardy.netlify.app/" target="_blank"
@@ -115,7 +148,13 @@
               /></a>
             </div>
             <!-- end of jeopardy -->
-            <div class="jeopardy-name name"><h2>Jeopardy Game</h2></div>
+            <div class="jeopardy-name name">
+              <h2>
+                <a href="https://jan-jeopardy.netlify.app/ " target="_blank"
+                  >Jeopardy Game</a
+                >
+              </h2>
+            </div>
             <!-- end of jeopardy-name-->
             <div class="blog">
               <a href="https://blog-fullstack.netlify.app/" target="_blank"
@@ -123,7 +162,13 @@
               /></a>
             </div>
             <!-- end of blog -->
-            <div class="blog-name name"><h2>Blog Site</h2></div>
+            <div class="blog-name name">
+              <h2>
+                <a href="https://blog-fullstack.netlify.app/" target="_blank"
+                  >Blog Site</a
+                >
+              </h2>
+            </div>
             <!-- end of blog-name -->
             <div class="war">
               <a
@@ -135,7 +180,15 @@
               /></a>
             </div>
             <!-- end of war -->
-            <div class="war-name name"><h2>I Declare War Card Game</h2></div>
+            <div class="war-name name">
+              <h2>
+                <a
+                  href="https://janettecampbell.github.io/I-Declare-War/"
+                  target="_blank"
+                  >I Declare War Card Game</a
+                >
+              </h2>
+            </div>
             <!-- end of war-name -->
             <div class="nyc">
               <a
@@ -145,7 +198,15 @@
               /></a>
             </div>
             <!-- end of nyc -->
-            <div class="nyc-name name"><h2>New York PD Reports</h2></div>
+            <div class="nyc-name name">
+              <h2>
+                <a
+                  href="https://janettecampbell.github.io/Dougie-the-Donut-and-Pizza-Rat/"
+                  target="_blank"
+                  >New York PD Reports</a
+                >
+              </h2>
+            </div>
             <!-- end of nyc-name -->
             <div class="pig">
               <a
@@ -154,15 +215,49 @@
                 ><img src="./images/pig.jpg" alt="pig image"
               /></a>
             </div>
-            <!-- end of dashboard -->
-            <div class="pig-name name"><h2>Pig Game</h2></div>
+            <!-- end of pig -->
+            <div class="pig-name name">
+              <h2>
+                <a
+                  href="https://janettecampbell.github.io/pig-game/"
+                  target="_blank"
+                  >Pig Game</a
+                >
+              </h2>
+            </div>
             <!-- end of dashboard-name -->
           </div>
           <!-- end of projects -->
         </section>
         <!-- end of section-portfolio --> </a
       ><!-- end of portfolio -->
+      <a id="certification">
+        <section class="section-certification">
+          <div class="certification animate">
+            <h1>Certification</h1>
+            <img src="./images/certificate.jpg" alt="Per Scholas Certificate" />
+          </div>
+          <!-- end of certification -->
+        </section>
+        <!-- end of section-certification -->
+      </a>
+      <!-- end of certification-->
 
+      <a id="resume">
+        <section class="section-resume">
+          <div class="resume animate">
+            <h1>Resume</h1>
+
+            <a href="./doc/Janette Campbell Resume.docx" target="_blank"
+              ><img src="./images/resume-img.jpg" alt="resume image" />
+              <h2>Click to Download</h2></a
+            >
+          </div>
+          <!-- en of class resume-->
+        </section>
+        <!-- end of section-resume -->
+      </a>
+      <!-- end of resume-->
       <section id="contact" class="section-contact">
         <div class="contact-animation animate">
           <div class="contact-text">
