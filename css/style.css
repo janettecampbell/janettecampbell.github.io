@@ -337,8 +337,18 @@ ul {
     display: none;
   }
 
+  .section-title {
+    height: 78vh;
+  }
+
   .title {
-    margin: 41vh auto 0 auto;
+    /* margin: 40vh auto 0 auto; */
+    margin: 22vh auto 0 auto;
+  }
+
+  .title h1 {
+    font-size: 8vw;
+    line-height: 10vw;
   }
 
   .memoji {
@@ -442,6 +452,11 @@ ul {
 
   .title {
     margin: 41hv auto 0 auto;
+  }
+
+  .title h1 {
+    font-size: 8vw;
+    line-height: 10vw;
   }
 
   .memoji {
