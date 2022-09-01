@@ -14,8 +14,11 @@ const hidden = document.querySelector(".hidden");
 // ============= If section is visible in window =================
 const isVisible = (e) => {
   const elementDiv = e.getBoundingClientRect();
-  let distanceFromTop = -300;
-  return elementDiv.top - window.innerHeight < distanceFromTop ? true : false;
+  let distanceFromTop = 0;
+  return elementDiv.top - document.documentElement.clientHeight <
+    distanceFromTop
+    ? true
+    : false;
 };
 
 // =============== Fade in =====================

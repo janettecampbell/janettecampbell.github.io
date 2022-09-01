@@ -266,7 +266,7 @@ ul {
 }
 
 .contact-text {
-  margin: 11vh 4vw;
+  margin: 15vh 4vw 4vh 4vw;
 }
 
 .contact-text h1 {
@@ -307,9 +307,9 @@ ul {
   .nav-btn-content {
     text-align: left;
     display: none;
-    margin-top: 47px;
+    margin: 47px -3vw 0 0;
     position: absolute;
-    min-width: 102px;
+    width: 100vw;
     background-color: #fff;
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
@@ -320,13 +320,14 @@ ul {
   }
 
   .nav-btn-content li a {
+    display: block;
     text-decoration: none;
     font-size: 2rem;
     color: #03141b;
   }
 
   .nav-btn li:hover {
-    background-color: rgb(175, 175, 175);
+    background-color: #a9d7ca;
   }
 
   .visible {
@@ -420,9 +421,9 @@ ul {
   .nav-btn-content {
     text-align: left;
     display: none;
-    margin-top: 47px;
+    margin: 47px -5vw 0 0;
     position: absolute;
-    min-width: 102px;
+    width: 100vw;
     background-color: #fff;
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
@@ -433,13 +434,14 @@ ul {
   }
 
   .nav-btn-content li a {
+    display: block;
     text-decoration: none;
     font-size: 2rem;
     color: #03141b;
   }
 
   .nav-btn li:hover {
-    background-color: rgb(175, 175, 175);
+    background-color: #a9d7ca;
   }
 
   .visible {
