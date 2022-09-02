@@ -155,6 +155,10 @@ ul {
   height: 50vh;
 }
 
+.projects h2 {
+  text-align: center;
+}
+
 .space {
   grid-area: space;
 }
@@ -217,7 +221,7 @@ ul {
   color: #03141b;
   background-color: #fff;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -236,6 +240,7 @@ ul {
 .section-resume {
   margin: 11vh 0 0 5vw;
   text-align: center;
+  min-height: 100vh;
 }
 
 .section-resume h1 {
