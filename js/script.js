@@ -4,9 +4,10 @@
 const animate = document.querySelectorAll(".animate");
 const animateLeft = document.querySelectorAll(".animate-left");
 const animateRight = document.querySelectorAll(".animate-right");
+// const navBtn = document.querySelector(".nav-btn");
 const navBtnImg = document.querySelector(".nav-btn-img");
 const menuBtn = document.getElementById("menu-btn");
-// const menuList = document.querySelector(".menu-list");
+const menuList = document.querySelector(".menu-list");
 const menuItem = document.querySelectorAll(".menu-item");
 const navBtnContent = document.querySelector(".nav-btn-content");
 const visible = document.querySelector(".visible");
@@ -85,13 +86,26 @@ const menuClick = (e) => {
 
 navBtnImg.addEventListener("click", menuClick);
 
-//================ Switch from visible to not visible on link click ===============
-const linkClick = () => {
+// ================ Switch from visible to not visible on link click ===============
+const notVisible = () => {
   navBtnContent.classList.remove("visible");
   navBtnContent.classList.add("hidden");
   menuBtn.src = "./images/menu-icon.png";
 };
 
+const linkClick = () => {
+  notVisible();
+};
+
 menuItem.forEach((item) => {
   item.addEventListener("click", linkClick);
 });
+
+// ==================== Switch from visible to not visible on click anywhere =======================
+const anywhereClick = (e) => {
+  if (!navBtnContent.contains(e.target) && !menuBtn.contains(e.target)) {
+    notVisible();
+  }
+};
+
+window.addEventListener("click", anywhereClick);
