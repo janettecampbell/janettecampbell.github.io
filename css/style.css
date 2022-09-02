@@ -314,7 +314,7 @@ ul {
     display: none;
     margin: 47px -3vw 0 0;
     position: absolute;
-    width: 100vw;
+    width: 103vw;
     background-color: #fff;
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
@@ -428,7 +428,7 @@ ul {
     display: none;
     margin: 47px -5vw 0 0;
     position: absolute;
-    width: 100vw;
+    width: 104vw;
     background-color: #fff;
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
@@ -436,6 +436,7 @@ ul {
 
   .nav-btn-content li {
     padding: 0 12px;
+    margin-left: 4vw;
   }
 
   .nav-btn-content li a {
