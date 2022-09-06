@@ -314,14 +314,14 @@ ul {
     display: none;
     margin: 47px -3vw 0 0;
     position: absolute;
-    width: 100vw;
+    width: fit-content;
     background-color: #fff;
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
   }
 
   .nav-btn-content li {
-    padding: 0 12px;
+    padding: 0 25px;
   }
 
   .nav-btn-content li a {
