@@ -4,12 +4,11 @@
 const animate = document.querySelectorAll(".animate");
 const animateLeft = document.querySelectorAll(".animate-left");
 const animateRight = document.querySelectorAll(".animate-right");
-// const navBtn = document.querySelector(".nav-btn");
-const navBtnImg = document.querySelector(".nav-btn-img");
-const menuBtn = document.getElementById("menu-btn");
+const navIcon = document.querySelector(".nav-icon");
 const menuList = document.querySelector(".menu-list");
 const menuItem = document.querySelectorAll(".menu-item");
 const navBtnContent = document.querySelector(".nav-btn-content");
+const navBtnContentLiA = document.querySelector(".nav-btn-content li a");
 const visible = document.querySelector(".visible");
 const hidden = document.querySelector(".hidden");
 
@@ -76,25 +75,25 @@ const menuClick = (e) => {
   if (navBtnContent.classList.contains("hidden")) {
     navBtnContent.classList.remove("hidden");
     navBtnContent.classList.add("visible");
-    menuBtn.src = "./images/close-icon.png";
+    navIcon.classList.add("open");
   } else {
     navBtnContent.classList.remove("visible");
     navBtnContent.classList.add("hidden");
-    menuBtn.src = "./images/menu-icon.png";
+    navIcon.classList.remove("open");
   }
 };
 
-navBtnImg.addEventListener("click", menuClick);
+navIcon.addEventListener("click", menuClick);
 
 // ================ Switch from visible to not visible on link click ===============
 const notVisible = () => {
   navBtnContent.classList.remove("visible");
   navBtnContent.classList.add("hidden");
-  menuBtn.src = "./images/menu-icon.png";
 };
 
 const linkClick = () => {
   notVisible();
+  navIcon.classList.remove("open");
 };
 
 menuItem.forEach((item) => {
@@ -103,8 +102,9 @@ menuItem.forEach((item) => {
 
 // ==================== Switch from visible to not visible on click anywhere =======================
 const anywhereClick = (e) => {
-  if (!navBtnContent.contains(e.target) && !menuBtn.contains(e.target)) {
+  if (!navBtnContentLiA.contains(e.target) && !navIcon.contains(e.target)) {
     notVisible();
+    navIcon.classList.remove("open");
   }
 };
 
