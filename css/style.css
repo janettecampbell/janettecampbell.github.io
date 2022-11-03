@@ -285,6 +285,16 @@ ul {
   text-align: center;
 }
 
+.error-page {
+  text-align: center;
+  margin-top: 45vh;
+}
+
+.error-page a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* ------------------------- Screen Size ---------------------- */
 /* ------------------------------------------------------------ */
 
