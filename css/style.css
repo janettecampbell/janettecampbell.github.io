@@ -133,8 +133,8 @@ ul {
   grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
   gap: 0px 10px;
   grid-template-areas:
-    "nyc space pig"
-    "nyc-name space-name pig-name"
+    "movie space pig"
+    "movie-site space-name pig-name"
     "jeopardy blog war"
     "jeopardy-name blog-name war-name";
 }
@@ -191,12 +191,12 @@ ul {
   grid-area: war-name;
 }
 
-.nyc {
-  grid-area: nyc;
+.movie {
+  grid-area: movie;
 }
 
-.nyc-name {
-  grid-area: nyc-name;
+.movie-site {
+  grid-area: movie-site;
 }
 
 .pig {
