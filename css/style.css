@@ -91,7 +91,7 @@ ul {
 .memoji {
   float: left;
   background-color: #fff;
-  margin: 11vh 0 0 2vw;
+  margin: 100px 0 0 2vw;
 }
 
 .memoji img {
@@ -104,7 +104,7 @@ ul {
 
 .about-text {
   float: right;
-  margin: 11vh 2vw 5vh 0;
+  margin: 100px 2vw 5vh 0;
   width: 66vw;
 }
 
@@ -124,6 +124,7 @@ ul {
 }
 
 .section-portfolio {
+  display: inline-block;
   margin: 8vh 4vw;
 }
 
@@ -243,9 +244,11 @@ ul {
 }
 
 .section-resume {
-  margin: 11vh 0 0 5vw;
+  display: inline-block;
+  margin: 100px auto 0 auto;
   text-align: center;
   min-height: 100vh;
+  width: 100%;
 }
 
 .section-resume h1 {
@@ -305,7 +308,7 @@ ul {
 
 @media screen and (min-width: 481px) and (max-width: 848px) {
   html {
-    scroll-padding-top: 99px;
+    scroll-padding-top: 87px;
   }
 
   header {
@@ -520,6 +523,10 @@ ul {
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
+  html {
+    scroll-padding-top: 87px;
+  }
+
   header {
     padding: 6px;
   }
