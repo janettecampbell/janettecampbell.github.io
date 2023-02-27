@@ -304,8 +304,13 @@ ul {
 /* ------------------------------------------------------------ */
 
 @media screen and (min-width: 481px) and (max-width: 848px) {
+  html {
+    scroll-padding-top: 99px;
+  }
+
   header {
     padding: 6px;
+    box-sizing: border-box;
   }
 
   .navbar {
