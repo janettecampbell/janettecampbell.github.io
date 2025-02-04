@@ -116,10 +116,12 @@ ul {
   grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
   gap: 0px 10px;
   grid-template-areas:
-    "movie space pig"
+    "ruched"
+    "ruched-name";
+    /* "movie space pig"
     "movie-site space-name pig-name"
     "jeopardy blog war"
-    "jeopardy-name blog-name war-name";
+    "jeopardy-name blog-name war-name"; */
 }
 .projects > div {
   cursor: pointer;
@@ -136,6 +138,12 @@ ul {
 }
 .projects h2 {
   text-align: center;
+}
+.ruched {
+  grid-area: ruched;
+}
+.ruched-name {
+  grid-area: ruched-name;
 }
 .space {
   grid-area: space;
