@@ -103,7 +103,7 @@ ul {
   margin: 2vh 0 4vh 0;
 }
 .section-portfolio {
-  display: inline-block;
+  display: block;
   margin: 8vh 4vw;
 }
 .section-portfolio h1 {
@@ -112,13 +112,13 @@ ul {
 }
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 0.25fr 1fr 0.25fr;
   gap: 0px 10px;
   grid-template-areas:
-    "ruched"
-    "ruched-name";
-    /* "movie space pig"
+    "ruched jean"
+    "ruched-name jean-name";
+  /* "movie space pig"
     "movie-site space-name pig-name"
     "jeopardy blog war"
     "jeopardy-name blog-name war-name"; */
@@ -132,9 +132,9 @@ ul {
   scale: 1.05;
 }
 .projects img {
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 100%;
-  height: 50vh;
+  height: 100%;
 }
 .projects h2 {
   text-align: center;
