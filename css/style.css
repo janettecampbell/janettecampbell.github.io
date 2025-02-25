@@ -372,7 +372,7 @@ ul {
     padding: 9vh 0vw;
     position: absolute;
     /* width: fit-content; */
-    background-color: rgba(34, 76, 72, 0.95);
+    background-color: rgba(105, 105, 105, 0.95);
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
   }
@@ -554,7 +554,7 @@ ul {
     margin: -1vh -1vw 0 0;
     padding: 9vh 0vw;
     position: absolute;
-    background-color: rgba(34, 76, 72, 0.95);
+    background-color: rgba(105, 105, 105, 0.95);
     box-shadow: 6px 6px 14px #03141b;
     z-index: 1;
   }
